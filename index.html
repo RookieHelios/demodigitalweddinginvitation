@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sokha & Dara - Wedding Invitation</title>
+    <!-- Import Google Fonts for Khmer -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Moul&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --gold: #d4af37;
+        --cream: #f9f4e8;
+        --text: #4a4a4a;
+      }
+
+      body {
+        background-color: var(--cream);
+        color: var(--text);
+        /* Changed to Khmer Font for body text */
+        font-family: "Battambang", cursive;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      /* 1. Hero Section */
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url("https://img.freepik.com/free-photo/groom-putting-ring-bride-s-finger_1157-338.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-bottom: 5px solid var(--gold);
+      }
+
+      .hero h1 {
+        font-size: 3rem; /* Adjusted for Khmer font height */
+        margin: 10px 0;
+        /* Changed to Khmer Header Font */
+        font-family: "Moul", serif;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        line-height: 1.5;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+        margin-top: 10px;
+        letter-spacing: 1px;
+      }
+
+      /* 2. Info Section */
+      .section {
+        padding: 60px 20px;
+        position: relative;
+      }
+
+      /* Decorative Kbach Element (Top Divider) */
+      .divider {
+        font-size: 20px;
+        color: var(--gold);
+        margin-bottom: 20px;
+      }
+
+      .names {
+        font-size: 1.8rem;
+        color: var(--gold);
+        margin-bottom: 20px;
+        font-family: "Moul", serif;
+      }
+
+      .date-box {
+        /* Traditional Frame Style */
+        border: 4px double var(--gold);
+        display: inline-block;
+        padding: 30px 40px;
+        margin: 30px 0;
+        background-color: white;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .date-box h2 {
+        margin: 5px 0;
+        font-size: 2.5rem;
+        font-family: "Moul", serif;
+        color: var(--text);
+      }
+
+      /* 3. Map Button */
+      .btn {
+        background-color: var(--gold);
+        color: white;
+        padding: 15px 40px;
+        text-decoration: none;
+        border-radius: 50px; /* Softer edges */
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 20px;
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+        transition: transform 0.2s;
+        font-family: "Battambang", cursive;
+      }
+
+      .btn:hover {
+        transform: scale(1.05);
+      }
+
+      /* 4. Gallery Grid */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: 50% 50%;
+        border-radius: 5px;
+        border: 1px solid var(--gold); /* Thin gold border around photos */
+      }
+
+      /* 5. ABA Section */
+      .aba-section {
+        background-color: white;
+        margin: 20px;
+        padding: 40px 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        border-top: 5px solid var(--gold); /* Gold accent on top */
+      }
+
+      .qr-placeholder {
+        width: 220px;
+        height: 220px;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* Add a frame around the QR code */
+        border: 2px solid #eee;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .qr-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 5px;
+      }
+
+      .khmer-label {
+        font-weight: bold;
+        color: var(--gold);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div class="hero">
+      <p>សូមគោរពអញ្ជើញចូលរួមពិធីមង្គលការ</p>
+      <!-- Invitation to Wedding -->
+      <h1>
+        សុខា <br />
+        & <br />
+        តារា
+      </h1>
+      <!-- Sokha & Dara -->
+      <p>ថ្ងៃសុក្រ ទី១២ ខែធ្នូ ឆ្នាំ២០២៥</p>
+      <!-- Friday 12 Dec 2025 -->
+    </div>
+
+    <!-- Invitation Info -->
+    <div class="section">
+      <div class="divider"><i class="fas fa-heart"></i></div>
+
+      <p>
+        យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ ឯកឧត្តម លោកជំទាវ លោក លោកស្រី
+        អ្នកនាងកញ្ញា ចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស
+        ក្នុងពិធីរៀបអាពាហ៍ពិពាហ៍កូនប្រុស កូនស្រីរបស់យើងខ្ញុំ។
+      </p>
+      <!-- "We have the honor to invite H.E, Lok Chumteav, Ladies and Gentlemen to preside..." -->
+
+      <div class="date-box">
+        <span>ថ្ងៃសុក្រ</span>
+        <!-- Friday -->
+        <h2>១២ ធ្នូ</h2>
+        <!-- 12 Dec -->
+        <span>២០២៥</span>
+        <!-- 2025 -->
+      </div>
+
+      <p>
+        <span class="khmer-label">វេលាម៉ោង:</span> ៥:០០ ល្ងាច (ពិធីពិសាភោជនាហារ)
+      </p>
+      <!-- 5:00 PM Reception -->
+      <p><span class="khmer-label">ទីតាំង:</span> ដឹ ព្រេមៀ សេនធ័រ សែនសុខ</p>
+      <!-- The Premier Centre Sen Sok -->
+
+      <!-- Google Map Link -->
+      <a href="https://maps.google.com" target="_blank" class="btn">
+        <i class="fas fa-map-marker-alt"></i> មើលទីតាំង (Map)
+      </a>
+    </div>
+
+    <!-- Photo Gallery -->
+    <div class="section" style="background-color: white">
+      <h2 class="names">កម្រងរូបភាព</h2>
+      <!-- Photo Gallery -->
+      <div class="gallery">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/5767f266b3db2b2a68604d87/1629999811527-KSGL408ZFW9PK6KC6Q04/Kinmount-House-Wedding.jpeg?format=2500w"
+          alt="Couple 1"
+        />
+        <img
+          src="https://cdn0.weddingwire.com/vendor/196522/3_2/960/jpg/105024809-3150166465051562-4967572640116446591-o_51_1225691-160522583716488.jpeg"
+          alt="Couple 2"
+        />
+        <img
+          src="https://marrymetampabay.com/wp-content/uploads/2024/07/10Classic-White-and-Greenery-Outdoor-Tampa-Garden-Wedding-Mill-Pond-Estate-jpeg.webp"
+          alt="Couple 3"
+        />
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/61a40a118a6182273e2c4d3f/1648839657175-Y9FK1X8VPB5GK9K5RZVE/Bear-Creek-Wedding.jpeg"
+          alt="Couple 4"
+        />
+      </div>
+    </div>
+
+    <!-- Money Gift (Jong Dai) -->
+    <div class="section">
+      <div class="aba-section">
+        <h2 class="names">ចំណងដៃ</h2>
+        <!-- Jong Dai -->
+        <p>សូមជូនពរជ័យ សិរីសួស្តី ជ័យមង្គល ដល់គូស្វាមីភរិយាថ្មី</p>
+        <!-- "Wish success and happiness to the new couple" -->
+
+        <div class="qr-placeholder">
+          <!-- Make sure the filename is correct! No spaces! -->
+          <img src="/QR Payment.jpg" alt="ABA QR Code" />
+        </div>
+
+        <p style="margin-top: 10px; font-weight: bold">
+          ពុទ្ធ រិទ្ធី (Puth Rithy)<br />966 999 669
+        </p>
+      </div>
+    </div>
+
+    <footer style="padding: 20px; font-size: 0.8rem; color: #888">
+      <p>Created by DWI</p>
+    </footer>
+  </body>
+</html>
